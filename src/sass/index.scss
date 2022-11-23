@@ -1,2 +1,10 @@
-@import './common';
-@import './example';
+// utils
+@import './utils/breakpoints';
+@import './utils/container';
+@import './utils/variables';
+@import './utils/common';
+// components
+@import './components/body';
+
+// layouts
+@import './layouts/hero';

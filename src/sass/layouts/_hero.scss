@@ -1,0 +1,98 @@
+.hero {
+  height: 667px;
+  padding-top: 136px;
+  padding-bottom: 135px;
+  margin: 0 auto;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/mobile/hero/herobg.jpg);
+
+  filter: drop-shadow(0px 5px 10px rgba(33, 33, 33, 0.1));
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/hero/herobg@2x.jpg);
+  }
+  // @media screen and (min-width: 481px) {
+  // }
+  @media screen and (min-width: 481px) {
+    height: 426px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-image: url(../images/desktop/hero/herobg.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/hero/herobg@2x.jpg);
+    }
+  }
+}
+
+.form {
+  position: relative;
+  text-align: center;
+}
+
+.form__input {
+  padding: 20px;
+  width: 343px;
+  height: 60px;
+  border-radius: 30px;
+
+  border: #ffffff;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: #9e9e9e;
+
+  @media screen and (min-width: 481px) {
+    width: 500px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 600px;
+  }
+}
+.form__button {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+
+  height: 40px;
+  width: 40px;
+
+  border: none;
+  background: #90caf9;
+  border-radius: 30px;
+
+  @media screen and (min-width: 481px) {
+    right: 140px;
+    top: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    right: 210px;
+    top: 10px;
+  }
+}
+.widget {
+  width: 343px;
+  height: 286px;
+  margin: 0 auto;
+  margin-top: 50px;
+
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 30px;
+
+  @media screen and (min-width: 481px) {
+    width: 500px;
+    height: 236px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 600px;
+    height: 236px;
+  }
+}
