@@ -3,8 +3,11 @@
 @import './utils/container';
 @import './utils/variables';
 @import './utils/common';
+@import './utils/minireset';
+
 // components
 @import './components/body';
 
 // layouts
 @import './layouts/hero';
+@import './layouts/cities';
