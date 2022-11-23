@@ -1,0 +1,30 @@
+{
+  "name": "weather-app",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://masiuk-mykola.github.io/Weather-app",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /Weather-app/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masiuk-mykola/Weather-app.git"
+  },
+  "keywords": [],
+  "author": "Masiuk Mykola <masiuk.mykola@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masiuk-mykola/Weather-app/issues"
+  },
+  "dependencies": {
+    "modern-normalize": "^1.1.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
