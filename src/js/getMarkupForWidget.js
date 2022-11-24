@@ -5,6 +5,8 @@ export const getWidget = cityName => {
   const markup = getWeatherByCityname(cityName).then(data => {
     const main = data.weather[0].main;
     const description = data.weather[0].description;
+    const capLettDescription =
+      description.charAt(0).toUpperCase() + description.slice(1);
     const imgUrl = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     const city = `${data.name}, ${data.sys.country}`;
     const minTemp = Math.floor(data.main.temp_min - 273.15);
@@ -22,7 +24,7 @@ export const getWidget = cityName => {
         <div>
     <h3 class="widget__temp">${temp}°C</h3>
           <p class="widget__main">${main}</p>
-          <p class="widget__description">${description}</p>
+          <p class="widget__description">${capLettDescription}</p>
         </div>
       </div>
       <div class="widget__location">
