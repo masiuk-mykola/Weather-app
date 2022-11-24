@@ -16,7 +16,7 @@
     font-weight: 500;
     font-size: 32px;
     line-height: 1.19;
-    width: 670px;
+    max-width: 670px;
     margin: 0 auto;
     margin-bottom: 35px;
 
@@ -26,6 +26,7 @@
 .cities__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 
   @media screen and (min-width: 481px) {

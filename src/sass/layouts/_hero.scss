@@ -33,6 +33,13 @@
 .form {
   position: relative;
   text-align: center;
+  margin: 0 auto;
+  @media screen and (min-width: 481px) {
+    width: 500px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 600px;
+  }
 }
 
 .form__input {
@@ -59,8 +66,10 @@
 }
 .form__button {
   position: absolute;
-  right: 20px;
-  top: 10px;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,15 +80,37 @@
   border: none;
   background: #90caf9;
   border-radius: 30px;
+}
+
+.city__list {
+  position: absolute;
+  padding: 20px;
+  width: 343px;
+  left: 16px;
+  top: 205px;
+  width: 343px;
+  background: #ffffff;
+  border-radius: 30px;
 
   @media screen and (min-width: 481px) {
-    right: 140px;
-    top: 10px;
+    width: 500px;
   }
   @media screen and (min-width: 1200px) {
-    right: 210px;
-    top: 10px;
+    width: 600px;
   }
+}
+.city__item {
+  border-radius: 30px;
+  padding: 7px 10px;
+  &:hover,
+  &:focus {
+    background: #90caf9;
+    color: white;
+  }
+}
+.city__name {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .widget {
