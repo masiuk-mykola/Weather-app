@@ -61,6 +61,9 @@
   position: absolute;
   right: 20px;
   top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   height: 40px;
   width: 40px;
@@ -78,6 +81,7 @@
     top: 10px;
   }
 }
+
 .widget {
   width: 343px;
   height: 286px;
