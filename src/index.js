@@ -5,6 +5,7 @@ import { getListOfCities } from './js/getListOfCities';
 import { getWidget } from './js/getWidget';
 import { refs } from './js/refs';
 import { scrollToTop } from './js/scrollToTop';
+import { showFAQ } from './js/showFAQ';
 
 refs.form.addEventListener('submit', e => {
   e.preventDefault();
@@ -50,3 +51,5 @@ refs.imgs.forEach(img =>
     });
   })
 );
+
+showFAQ();

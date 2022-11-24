@@ -5,4 +5,7 @@ export const refs = {
   widget: document.querySelector('.widget'),
   footerYear: document.querySelector('.footer__name'),
   imgs: document.querySelectorAll('.cities__img'),
+  faq: document.querySelectorAll('.faq__item'),
+  text: document.querySelectorAll('.item__text'),
+  arrow: document.querySelectorAll('.item__svg'),
 };
