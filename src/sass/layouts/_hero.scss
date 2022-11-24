@@ -55,10 +55,10 @@
   font-size: 16px;
   line-height: 1.5;
 
-  color: #9e9e9e;
+  color: #000;
 
   @media screen and (min-width: 481px) {
-    width: 500px;
+    width: 500px; //TODO fix it
   }
   @media screen and (min-width: 1200px) {
     width: 600px;
@@ -94,6 +94,9 @@
 
   @media screen and (min-width: 481px) {
     width: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
   @media screen and (min-width: 1200px) {
     width: 600px;
@@ -113,21 +116,119 @@
   line-height: 1.5;
 }
 
+.error__text {
+  font-size: 16px;
+  line-height: 1.5;
+
+  text-align: center;
+
+  color: #9e9e9e;
+}
+
 .widget {
-  width: 343px;
+  min-width: 343px;
   height: 286px;
   margin: 0 auto;
   margin-top: 50px;
+  padding: 20px;
 
   background: rgba(255, 255, 255, 0.85);
   border-radius: 30px;
 
   @media screen and (min-width: 481px) {
-    width: 500px;
+    max-width: 600px;
     height: 236px;
   }
-  @media screen and (min-width: 1200px) {
-    width: 600px;
-    height: 236px;
+  // @media screen and (min-width: 1200px) {
+  //   width: 600px;
+  //   height: 236px;
+  // }
+}
+
+.widget__info {
+  display: flex;
+}
+.widget__img {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 30px;
+  margin-right: 20px;
+  margin-bottom: 23px;
+}
+
+.widget__temp {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+
+  margin-bottom: 10px;
+}
+.widget__main {
+  font-size: 16px;
+  line-height: 1.5;
+
+  margin-bottom: 10px;
+}
+.widget__description {
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: #9e9e9e;
+}
+.widget__location {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  @media screen and (min-width: 481px) {
+    display: block;
+    text-align: right;
+  }
+}
+.city {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.date {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #9e9e9e;
+}
+.widget__temperature {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  border-top: 1px solid #bfdce8;
+  @media screen and (min-width: 481px) {
+    padding: 20px 110px;
+  }
+}
+.widget__min {
+  border-right: 1px solid #bfdce8;
+  padding-right: 61px;
+  @media screen and (min-width: 481px) {
+    padding-right: 130px;
+  }
+}
+.status {
+  font-size: 16px;
+  line-height: 1.5;
+
+  text-align: center;
+
+  color: #9e9e9e;
+}
+.temperature {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+
+  text-align: center;
+}
+.widget__wrapper {
+  @media screen and (min-width: 481px) {
+    display: flex;
+    justify-content: space-between;
   }
 }
