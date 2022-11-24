@@ -5,6 +5,7 @@ export const getListOfCities = inputValue => {
     if (data.length === 0) {
       return `<p class='error__text'>City not found, please try to change your search query</p>`;
     }
+
     return data
       .map(item => {
         return `<li class="city__item">

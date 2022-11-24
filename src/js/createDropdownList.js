@@ -1,8 +1,11 @@
+import { addLatestCities } from './addLatestCities';
 import { cleanWidget } from './cleanWidget';
 import { closeList } from './closeList';
+import { getLatestCityWeather } from './getLatestCityWeather';
 import { getListOfCities } from './getListOfCities';
 import { getWidget } from './getMarkupForWidget';
 import { refs } from './refs';
+import { renderLatestCities } from './renderLatestCities';
 
 export const createDropdownList = e => {
   refs.form.addEventListener('submit', e => {
@@ -19,6 +22,9 @@ export const createDropdownList = e => {
       li.forEach(item =>
         item.addEventListener('click', e => {
           const cityName = e.target.textContent.split(' ').join('');
+          addLatestCities(cityName);
+          getLatestCityWeather();
+
           getWidget(cityName).then(markup => {
             closeList();
             cleanWidget();

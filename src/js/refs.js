@@ -8,4 +8,6 @@ export const refs = {
   faq: document.querySelectorAll('.faq__item'),
   text: document.querySelectorAll('.item__text'),
   arrow: document.querySelectorAll('.item__svg'),
+  latestCitiesWrapper: document.querySelector('.city__latest'),
+  latestCities: document.querySelectorAll('.city__name'),
 };
