@@ -29,6 +29,23 @@
   }
 }
 
+.hero.night {
+  background-image: url(../images/mobile/hero/heroNight.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/hero/heroNight@2x.jpg);
+  }
+  @media screen and (min-width: 376px) {
+    background-image: url(../images/desktop/hero/heroNight.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/hero/heroNight@2x.jpg);
+    }
+  }
+}
+
 .form {
   position: relative;
   text-align: center;
@@ -69,8 +86,12 @@
   width: 40px;
 
   border: none;
-  background: #90caf9;
+  background: $accent-day;
   border-radius: 30px;
+}
+
+.form__button.night {
+  background: $accent-night;
 }
 
 .city__list {
@@ -95,12 +116,22 @@
 .city__item {
   border-radius: 30px;
   padding: 7px 10px;
+
   &:hover,
   &:focus {
-    background: #90caf9;
+    background: $accent-day;
     color: white;
   }
 }
+
+.city__item.night {
+  &:hover,
+  &:focus {
+    background: $accent-night;
+    color: white;
+  }
+}
+
 .city__name {
   font-size: 16px;
   line-height: 1.5;
@@ -112,7 +143,7 @@
 
   text-align: center;
 
-  color: #9e9e9e;
+  color: $grayText;
 }
 
 .widget {
@@ -160,7 +191,7 @@
   font-size: 16px;
   line-height: 1.5;
 
-  color: #9e9e9e;
+  color: $grayText;
 }
 .widget__location {
   display: flex;
@@ -179,7 +210,7 @@
 .date {
   font-size: 16px;
   line-height: 1.5;
-  color: #9e9e9e;
+  color: $grayText;
 }
 .widget__temperature {
   display: flex;
@@ -203,7 +234,7 @@
 
   text-align: center;
 
-  color: #9e9e9e;
+  color: $grayText;
 }
 .temperature {
   font-weight: 500;
@@ -223,7 +254,7 @@
   font-size: 16px;
   line-height: 1.5;
 
-  color: #9e9e9e;
+  color: $grayText;
 
   margin: 0 auto;
   max-width: 600px;
@@ -233,5 +264,6 @@
   &:hover,
   &:focus {
     color: #000;
+    transition: color 250ms linear;
   }
 }

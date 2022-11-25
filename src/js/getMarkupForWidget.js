@@ -7,7 +7,7 @@ export const getWidget = cityName => {
     const description = data.weather[0].description;
     const capLettDescription =
       description.charAt(0).toUpperCase() + description.slice(1);
-    const imgUrl = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    const imgUrl = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
     const city = `${data.name}, ${data.sys.country}`;
     const minTemp = Math.floor(data.main.temp_min - 273.15);
     const maxTemp = Math.floor(data.main.temp_max - 273.15);

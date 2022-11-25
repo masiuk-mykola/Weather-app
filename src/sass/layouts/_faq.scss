@@ -40,12 +40,11 @@
   position: absolute;
   top: 35%;
   right: 20px;
-
-  // transform: translate(-0, -50%);
-  // transform: rotate(180deg);
+  transition: transform 250ms linear;
 }
 .item__svg.rotate {
   transform: rotate(180deg);
+  transition: transform 250ms linear;
 }
 
 .item__caption {
@@ -65,6 +64,13 @@
 
   padding: 15px 20px;
 }
+
 .hidden {
   display: none;
+  opacity: 0;
+}
+
+.item__hidden {
+  opacity: 1;
+  transition: opacity 2500ms linear;
 }

@@ -5,7 +5,6 @@ import { getLatestCityWeather } from './getLatestCityWeather';
 import { getListOfCities } from './getListOfCities';
 import { getWidget } from './getMarkupForWidget';
 import { refs } from './refs';
-import { renderLatestCities } from './renderLatestCities';
 
 export const createDropdownList = e => {
   refs.form.addEventListener('submit', e => {
@@ -21,7 +20,7 @@ export const createDropdownList = e => {
       const li = document.querySelectorAll('.city__item');
       li.forEach(item =>
         item.addEventListener('click', e => {
-          const cityName = e.target.textContent.split(' ').join('');
+          const cityName = e.target.textContent.split(',').join(',');
           addLatestCities(cityName);
           getLatestCityWeather();
 

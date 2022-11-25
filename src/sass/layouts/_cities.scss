@@ -39,6 +39,13 @@
 }
 .cities__img {
   border-radius: 30px;
+  cursor: pointer;
+  transition: transform 250ms linear;
+  &:hover,
+  &:focus {
+    transform: scale(1.02);
+    transition: transform 250ms linear;
+  }
 }
 .cities__caption {
   font-size: 16px;

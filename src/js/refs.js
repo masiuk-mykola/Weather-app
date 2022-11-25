@@ -10,4 +10,7 @@ export const refs = {
   arrow: document.querySelectorAll('.item__svg'),
   latestCitiesWrapper: document.querySelector('.city__latest'),
   latestCities: document.querySelectorAll('.city__name'),
+  hero: document.querySelector('.hero'),
+  formBtn: document.querySelector('.form__button'),
+  cityItem: document.querySelectorAll('.city__item'),
 };
